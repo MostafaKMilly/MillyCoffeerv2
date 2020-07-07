@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>MillyCoffee</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="coffecompany.css">
+    <title>Business Frontpage - Start Bootstrap Template</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <link rel="stylesheet" href="coffecompany.css">
     <script src="coffecompany.js" async></script>
 </head>
 
@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img style="width: 51px;"src="drink.png" alt="">
+                <img style="width: 51px;"src="C:\Users\mosta\Downloads\drink.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,13 +33,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">About</a>
+                        <a class="nav-link" href="#contacts">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contacts">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -65,19 +65,19 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-4 mt-4">
-                    <img style="width: 60px;"src="24-hours.png" alt="">
+                    <img style="width: 60px;"src="C:\Users\mosta\Downloads\24-hours.png" alt="">
                     </span>
                     <h4 class="my-3">24-hours services</h4>
                     <p class="text-muted">We stay the nights for you</p>
                 </div>
                 <div class="col-md-4 mt-4">
-                    <img style="width: 58px;"src="money.png" alt="">
+                    <img style="width: 58px;"src="C:\Users\mosta\Downloads\money.png" alt="">
                     <h4 class="my-3">Save money with us</h4>
                     <p class="text-muted">Our products are at half price</p>
                 </div>
                 <div class="col-md-4 mt-4">
                     
-                    <img style="width: 55px;"src="chronometer.png" alt="">
+                    <img style="width: 55px;"src="C:\Users\mosta\Downloads\chronometer.png" alt="">
                     <h4 class="my-3">Faster</h4>
                     <p class="text-muted">We have a large number of employees to serve you</p>
                 </div>
@@ -86,7 +86,7 @@
     </section>
     <div class="container mt-5 bg-light" style="max-width: 100%;">
         <div class="text-center">
-        <h1 class="section-heading text-uppercase font-weight-lighter pt-3 mb-4">Our Store</h1>
+        <h1 class="section-heading text-uppercase font-weight-lighter mt-4">Our Store</h1>
         <div class="input-group col-md-7 mx-auto" >
             <input class="form-control mr-sm-2" type="text" placeholder="Search" id="searchbox">
             <button class="btn btn-success" type="submit" onclick="SearchItems();">Search</button>
@@ -168,13 +168,14 @@
         
         </div>
     </div>
-<div id="contact"class="container pt-5 pb-4 bg-light" style="width: 100%; max-width: 100%; text-align: center;"> 
+    <div id="contacts"class="container pt-5 pb-4 bg-light" style="width: 100%; max-width: 100%; text-align: center;"> 
         <h1 class="mb-4">About Us</h1>
         <div class="row bg-light">
- <img style="max-height: 350px;"class="img-fluid d-md-none col-md-6" src="https://startbootstrap.github.io/startbootstrap-business-casual/img/intro.jpg" alt="">
-                        <img style="max-height:450px"class="img-fluid d-none d-md-block col-xl-5 col-lg-6 col-md-6"
+            <img style="max-height: 350px;"class="img-fluid d-block d-sm-none col-xl-5 col-lg-6" src="https://startbootstrap.github.io/startbootstrap-business-casual/img/intro.jpg" alt="">
+                        <img class="img-fluid d-none d-sm-block col-xl-5 col-lg-6"
                             src="https://startbootstrap.github.io/startbootstrap-business-casual/img/intro.jpg" alt="">
-            <div class="container col-xl-5 col-lg-6 col-md-6 mt-4">
+
+            <div class=" container col-xl-5 col-lg-6 mt-4">
                 <p style="font-size: 30px;"class=" font-weight-lighter display-4 ">A Syrian company that offers the best types of coffee at
                     the best price</p> <br>
                 <h2 class="font-weight-normal">Contact Us</h1>
@@ -187,13 +188,21 @@
                         </a>
                     </div>
             </div>
-            </div>
+            
         </div>
+        
+    </div>
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
         <div class="container text-center">
             <small>Copyright &copy; MostafaMilly</small>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('.navbar-nav>li>a').on('click', function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+    </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
