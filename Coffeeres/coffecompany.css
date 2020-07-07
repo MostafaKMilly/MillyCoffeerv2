@@ -1,0 +1,13 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('C:\\Users\\mosta\\Desktop\\3061577.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width:600px) {
+    .masthead {
+        height: 50vh;
+    }
+}
